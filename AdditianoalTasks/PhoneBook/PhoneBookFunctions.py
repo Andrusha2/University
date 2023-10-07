@@ -2,8 +2,9 @@ phoneBook = {}
 
 
 def namestd(name):
+    name = name.split()
     result = ''
-    for i in range(len(name.split())):
+    for i in range(len(name)):
         result += name[i][0].upper() + name[i][1:].lower() + ' '
     return result
 
@@ -25,4 +26,6 @@ def check():
 
 
 def change(name):
-    phoneBook[namestd(name)] = numstd(input("Type new number here: "))
+    phoneBook[namestd(name)] = numstd(input("Enter new phone number: "))
+
+
