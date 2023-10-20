@@ -1,7 +1,7 @@
-from ForGit.PracticalWorks.MontyHallProblem import *
+from ForGit.PracticalWorks.Paradox.TheMontyHallProblem import *
 
 
-def show():
+def montyHall():
     while True:
         func = int(input("Choose function:\n0. Automode\n1. Play\n2. Stats\n3. Exit\n"))
         if func == 0:
