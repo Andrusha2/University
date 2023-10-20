@@ -3,7 +3,6 @@ changedwinc = []
 mainc = []
 
 
-
 def play(usernumber):
     windoor = randint(0, 2)
     doors = [0, 0, 0]
