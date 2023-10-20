@@ -1,10 +1,9 @@
-import MontyHallProblem
-import TheBirthdayProblem
-paradoxn = int(input("Which problem would you like to solve?\n"
-                     "1. The Monty Hall Problem\n"
-                     "2. The Birthday Problem\n"))
+import Paradox
 
+paradoxn = int(input("Which problem would you like to solve?\n"
+                         "1. The Monty Hall Problem\n"
+                         "2. The Birthday Problem\n"))
 if paradoxn == 1:
-    MontyHallProblem.show()
+    Paradox.montyHall()
 elif paradoxn == 2:
-    TheBirthdayProblem.show()
+    Paradox.birthday()

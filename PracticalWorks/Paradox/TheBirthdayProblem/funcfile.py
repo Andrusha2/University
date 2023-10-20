@@ -18,10 +18,7 @@ def createandequal():
             break
 
 
-
-
-
 def result(totalgroups, matchgroups):
-    return sum(matchgroups) / sum(totalgroups)
+    return f"{round(sum(matchgroups) / sum(totalgroups), 3) * 100}%"
 
 
