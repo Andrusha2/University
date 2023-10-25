@@ -1,4 +1,4 @@
-from ForGit.PracticalWorks.Paradox.TheMontyHallProblem import *
+from ForGit.PracticalWorks.Paradoxes.TheMontyHallProblem import *
 
 
 def montyHall():

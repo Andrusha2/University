@@ -1,9 +1,9 @@
-import Paradox
+import Paradoxes
 
-paradoxn = int(input("Which problem would you like to solve?\n"
-                         "1. The Monty Hall Problem\n"
-                         "2. The Birthday Problem\n"))
+paradoxn = int(input("Which package would you like to run?\n"
+                     "1. The Monty Hall Problem\n"
+                     "2. The Birthday Problem\n"))
 if paradoxn == 1:
-    Paradox.montyHall()
+    Paradoxes.montyHall()
 elif paradoxn == 2:
-    Paradox.birthday()
+    Paradoxes.birthday()
