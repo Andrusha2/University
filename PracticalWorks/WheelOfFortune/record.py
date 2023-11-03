@@ -1,4 +1,5 @@
-words = open("words.txt", "r+")
+path = "\\".join(list(__file__.split('\\'))[:-1]) + "\\words.txt"
+words = open(path, "r+")
 words.seek(0)
 total_record = int(words.readline())
 

@@ -1,22 +1,25 @@
 from random import randint
 
-from ForGit.PracticalWorks.WheelOfFortune.hp import *
+from ForGit.PracticalWorks.WheelOfFortune.hp import difficulty
 
-with open("words.txt", "a+") as words:
+path = "\\".join(list(__file__.split('\\'))[:-1]) + "\\words.txt"
+
+with open(path, "a+") as words:
     words.seek(0)
-    word_list = words.read().split()
+    word_list = list(map(lambda x: x.lower(), words.read().split()))
 
 
 def game(word_list):
     playing = True
     current_record = 0
-    while playing:
+    while playing and len(word_list) > 1:
         word = word_list[randint(1, len(word_list) - 1)]
-        hidden_word = list(word.replace(word, '■' * len(word)))
+        word_list.remove(word)
+        hidden_word = list('■' * len(word))
         word_l = list(word)
         health = difficulty(input("Choose the difficulty level\n"
                                   "1. easy\n2. normal\n3. hard\n"))
-        while health > 0 :
+        while health > 0:
             print(f"{''.join(hidden_word)} | ❤x{health}")
             user_letter = input("Choose a letter or type the whole word: ")
             if len(user_letter) > 1:
@@ -33,7 +36,7 @@ def game(word_list):
                     print("You lost!")
                     playing = False
                     break
-            if user_letter in word_l:
+            if user_letter in word_l and user_letter != '':
                 letter_index = word_l.index(user_letter)
                 hidden_word[letter_index] = user_letter
                 word_l[letter_index] = ''
@@ -52,13 +55,14 @@ def game(word_list):
                 if health == 0:
                     print("You lost!")
                     playing = False
+    if len(word_list) == 1:
+        print("You guessed whole word list!")
     return current_record
 
 
 def cont():
-    if input("Would you like to continue? (yes|no) ") == 'yes':
+    if input("Would you like to continue? (1. yes|2. no) ") == '1':
         return 1
     else:
         return 0
-
 
