@@ -15,8 +15,8 @@ def game(word_list):
         hidden_word = list(word.replace(word, '■' * len(word)))
         word_l = list(word)
         health = difficulty(input("Choose the difficulty level\n"
-                                  "easy/normal/hard\n"))
-        while health > 0:
+                                  "1. easy\n2. normal\n3. hard\n"))
+        while health > 0 :
             print(f"{''.join(hidden_word)} | ❤x{health}")
             user_letter = input("Choose a letter or type the whole word: ")
             if len(user_letter) > 1:
