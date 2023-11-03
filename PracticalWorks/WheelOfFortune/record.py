@@ -9,6 +9,7 @@ def record(total_record, current_record):
         print(current_record)
         words.seek(0)
         words.write(str(current_record))
+        words.close()
     elif current_record == total_record:
         print("Same record")
         print(current_record)

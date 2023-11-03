@@ -1,5 +1,5 @@
-from ForGit.PracticalWorks.WheelOfFortune.game_code import *
 from ForGit.PracticalWorks.WheelOfFortune.record import *
+from ForGit.PracticalWorks.WheelOfFortune.game_code import *
 
 
 def start_game():
