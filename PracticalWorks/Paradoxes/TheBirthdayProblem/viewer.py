@@ -1,4 +1,4 @@
-from ForGit.PracticalWorks.Paradox.TheBirthdayProblem import *
+from ForGit.PracticalWorks.Paradoxes.TheBirthdayProblem import *
 
 
 def birthday():
