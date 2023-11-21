@@ -1,5 +1,4 @@
-from ForGit.PracticalWorks.Paradoxes.TheMontyHallProblem import montyHall
-from ForGit.PracticalWorks.Paradoxes.TheBirthdayProblem import birthday
+from ForGit.PracticalWorks.P1P2Paradoxes import *
 
 if __name__ == '__main__':
     paradoxn = int(input("Which problem would you like to solve?\n"
