@@ -1,4 +1,4 @@
-from ForGit.PracticalWorks.P1P2Paradoxes import *
+from ForGit.practial_works.p1_p2_paradoxes import *
 
 if __name__ == '__main__':
     paradoxn = int(input("Which problem would you like to solve?\n"

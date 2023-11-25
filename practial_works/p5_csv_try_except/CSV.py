@@ -10,11 +10,17 @@ def file_reader(file_name):
         for row in reader:
             nums_list.append(int(*row))
         f.close()
-        return nums_list
     except FileNotFoundError:
         print(f'File {file_name} does not exist')
     except ValueError:
         print(f'File contains invalid data type')
-
-
+    except IOError:
+        print('IO error')
+    except KeyboardInterrupt:
+        print('The user interrupted the process')
+    except Exception:
+        print('Any other error')
+    else:
+        return nums_list
+    return None
 

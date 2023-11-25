@@ -1,12 +1,12 @@
-import P1P2Paradoxes
-import P3WheelOfFortune
+import p1_p2_paradoxes
+import p3_wheel_of_fortune
 paradoxn = int(input("Which package would you like to run?\n"
                      "1. The Monty Hall Problem\n"
                      "2. The Birthday Problem\n"
                      "3. Wheel of fortune the game\n"))
 if paradoxn == 1:
-    P1P2Paradoxes.montyHall()
+    p1_p2_paradoxes.montyHall()
 elif paradoxn == 2:
-    P1P2Paradoxes.birthday()
+    p1_p2_paradoxes.birthday()
 elif paradoxn == 3:
-    P3WheelOfFortune.start_game()
+    p3_wheel_of_fortune.start_game()
