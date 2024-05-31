@@ -1,4 +1,4 @@
-from ForGit.practial_works.p7_books_search import *
+from ForGit.subject_python_programming.practial_works.p7_books_search import *
 
 if __name__ == '__main__':
     lst = get_books(input('Type the search word here: '))

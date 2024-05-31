@@ -1,6 +1,6 @@
 from random import randint
 
-from ForGit.practial_works.p3_wheel_of_fortune.hp import difficulty
+from ForGit.subject_python_programming.practial_works.p3_wheel_of_fortune.hp import difficulty
 
 path = "\\".join(list(__file__.split('\\'))[:-1]) + "\\words.txt"
 
